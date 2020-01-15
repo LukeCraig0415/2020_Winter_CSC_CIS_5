@@ -70,6 +70,7 @@ int main(int argc, char** argv) {
     cin>>x;
     x>0?sumPos+=x:sumNeg+=x;
     
+    //Sum total simply sum of both positive and negative
     sumTot=sumPos+sumNeg;
 
     //Display Outputs
