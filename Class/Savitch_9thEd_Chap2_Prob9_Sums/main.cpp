@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     sumTot=sumNeg=sumPos=0;
     
     //Process or map Inputs to Outputs
-    cout<<"Average 10 Numbers Positive or Negative"<<endl;
+    cout<<"Sum 10 Numbers Positive or Negative"<<endl;
     cout<<"Zero is neither positive or Negative"<<endl;
     cout<<"Input a number "<<endl;
     cin>>x;
