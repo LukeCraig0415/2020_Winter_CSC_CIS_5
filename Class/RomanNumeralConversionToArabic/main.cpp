@@ -25,14 +25,15 @@ int main(int argc, char** argv) {
     cout<<"This program converts Arabic to Roman Numerals"<<endl;
     cout<<"Input a number between 1 - 3000"<<endl;
     cin>>n2Cnvrt;
-    if(n2Cnvrt>=1&&n2Cnvrt<=3000){
+    //Check for a valid input
+    if(n2Cnvrt>=1 && n2Cnvrt<=3000){
     //Process or map Inputs to Outputs
         //Determine 1000's, 100's, 10's, 1's
         unsigned char n1000s,n100s,n10s,n1s;
-        n1000s=n2Cnvrt/1000;
-        n100s=(n2Cnvrt-n1000s*1000)/100;
-        n10s=(n2Cnvrt-n1000s*1000-n100s*100)/10;
-        n1s=n2Cnvrt%10;
+        n1000s=n2Cnvrt/1000;   //Shift 3 places to the left
+        n100s=n2Cnvrt%1000/100;//Remainder of division of 1000 then shift 2 left
+        n10s=n2Cnvrt%100/10;   //Remainder of division of 100 then shift 1 left
+        n1s=n2Cnvrt%10;        //Remainder of division by 10
         
         //Output the number of 1000's in Roman Numerals
         switch(n1000s){
