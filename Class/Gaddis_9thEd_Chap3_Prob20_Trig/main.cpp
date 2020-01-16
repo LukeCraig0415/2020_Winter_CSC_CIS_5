@@ -23,21 +23,21 @@ const float CNVRAD=PI/180;//Conversion to Radians from Degrees
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Declare Variable Data Types and Constants
-    float angle;
+    float angDeg,angRad;
     
     //Initialize Variables
     cout<<"Input an angle in degrees"<<endl;
-    cin>>angle;
+    cin>>angDeg;
     
     //Process or map Inputs to Outputs
-    angle*=CNVRAD;
+    angRad=angDeg*CNVRAD;
     
     //Display Outputs
     cout<<fixed<<setprecision(4)<<showpoint;
-    cout<<"sin("<<angle<<")="<<sin(angle)<<endl;
-    cout<<"cos("<<angle<<")="<<cos(angle)<<endl;
-    cout<<"tan("<<angle<<")="<<tan(angle)<<endl;
-    cout<<"tan("<<angle<<")="<<sin(angle)/cos(angle)<<endl;
+    cout<<"sin("<<static_cast<int>(angDeg)<<")="<<sin(angRad)<<endl;
+    cout<<"cos("<<angDeg<<")="<<cos(angRad)<<endl;
+    cout<<"tan("<<angDeg<<")="<<tan(angRad)<<endl;
+    cout<<"tan("<<angDeg<<")="<<sin(angRad)/cos(angRad)<<endl;
 
     //Exit stage right!
     return 0;

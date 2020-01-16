@@ -1,9 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
- * Created on January 6, 2020, 12:23 PM
- * Purpose:  C++ Template to be copied and utilized
- * for homework, projects, exams!
+ * Created on January 16, 2020, 12:15 PM
+ * Purpose:  Truth Table
  */
 
 //System Libraries
@@ -19,15 +18,32 @@ using namespace std;
 
 //Execution Begins Here
 int main(int argc, char** argv) {
-    //Set Random Number seed
-    
     //Declare Variable Data Types and Constants
+    bool x,y;
     
-    //Initialize Variables
+    //Display the Heading
+    cout<<"X Y !X !Y X&&Y X||Y X^Y X^Y^Y X^Y^X "<<
+            "!X&&!Y !(X||Y) !X||!Y !(X&&Y)"<<endl;
     
-    //Process or map Inputs to Outputs
+    //1st Output Row
+    x=y=true;
+    cout<<(x?'T':'F')<<" ";
+    cout<<(y?'T':'F')<<"  ";
+    cout<<(!x?'T':'F')<<"  ";
+    cout<<(!y?'T':'F')<<"   ";
+    cout<<(x&&y?'T':'F')<<"    ";
+    cout<<(x||y?'T':'F')<<"  ";
+    cout<<endl;
     
-    //Display Outputs
+    //2nd Output Row
+    y=false;
+    cout<<(x?'T':'F')<<" ";
+    cout<<(y?'T':'F')<<"  ";
+    cout<<(!x?'T':'F')<<"  ";
+    cout<<(!y?'T':'F')<<"   ";
+    cout<<(x&&y?'T':'F')<<"    ";
+    cout<<(x||y?'T':'F')<<"  ";
+    cout<<endl;
 
     //Exit stage right!
     return 0;

@@ -36,6 +36,7 @@ int main(int argc, char** argv) {
         n1s=n2Cnvrt%10;        //Remainder of division by 10
         
         //Output the number of 1000's in Roman Numerals
+        //Using the Switch Statement
         switch(n1000s){
             case 3:cout<<'M';
             case 2:cout<<'M';
@@ -43,6 +44,7 @@ int main(int argc, char** argv) {
         }
         
         //Output the number of 100's
+        //Using the Ternary Operator
         cout<<(n100s==9?"CM":
                n100s==8?"DCCC":
                n100s==7?"DCC":
@@ -54,6 +56,7 @@ int main(int argc, char** argv) {
                n100s==1?"C":"");
         
         //Output the number of 10's
+        //Using Independent If Statements
         if(n10s==9)cout<<"XC";
         if(n10s==8)cout<<"LXXX";
         if(n10s==7)cout<<"LXX";
@@ -65,6 +68,7 @@ int main(int argc, char** argv) {
         if(n10s==1)cout<<"X";
         
         //Output the number of 1's
+        //Using Dependent If Statements
         if(n1s==9)cout<<"IX";
         else if(n1s==8)cout<<"VIII";
         else if(n1s==7)cout<<"VII";
